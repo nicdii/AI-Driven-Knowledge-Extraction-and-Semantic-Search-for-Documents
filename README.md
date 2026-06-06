@@ -48,29 +48,6 @@ Only the Django admin route is currently configured:
 
 App-level URL files and public/API routes still need to be added.
 
-## Environment Variables
-
-Create a `.env` file in the project root. Do not commit secrets.
-
-```env
-DJANGO_SECRET_KEY=replace-with-a-secret-key
-DJANGO_DEBUG=True
-DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost
-
-USE_SQLITE_FALLBACK=True
-
-POSTGRES_DB=search_system
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-
-TESSERACT_PATH=
-POPPLER_PATH=
-OCR_LANGUAGE=eng+pan
-```
-
-Set `USE_SQLITE_FALLBACK=True` for a quick local run without PostgreSQL. Set it to `False` when using PostgreSQL.
 
 ## Setup
 
